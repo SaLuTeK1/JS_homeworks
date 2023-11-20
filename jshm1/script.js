@@ -46,4 +46,10 @@ console.log(typeof c);
 
 console.log(space);
 
-console.log(prompt("Введіть своє ім'я"))
+let promptFirstName = prompt("Введіть своє ім'я")
+let promptLastName = prompt("Введіть своє прізвище")
+let promptAge = prompt("Введіть свій вік")
+
+console.log(promptLastName);
+console.log(promptFirstName);
+console.log(promptAge);
