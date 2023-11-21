@@ -48,7 +48,7 @@ console.log(space);
 
 let promptFirstName = prompt("Введіть своє ім'я")
 let promptLastName = prompt("Введіть своє прізвище")
-let promptAge = prompt("Введіть свій вік")
+let promptAge = + prompt("Введіть свій вік")
 
 console.log(promptLastName);
 console.log(promptFirstName);
