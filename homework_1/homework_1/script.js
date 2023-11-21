@@ -34,7 +34,8 @@ console.log(space);
 let firstName = "Roman";
 let middleName = 'Romanovuch';
 let lastName = 'Babiichuk';
-console.log(`${lastName} ${firstName} ${middleName}`);
+let person = `${lastName} ${firstName} ${middleName}`;
+console.log(person);
 
 console.log(space);
 let a = 100;
