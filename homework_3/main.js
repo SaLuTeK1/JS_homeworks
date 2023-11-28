@@ -144,13 +144,13 @@ let users = [
 // - користувачів які старші за 30 років
 
 for (const user of users) {
-    if(user.status === true){
+    if(user.status){
         console.log(user.name , user.age , user.status)
     }
 }
 console.log('--------')
 for (const user of users) {
-    if(user.status === false){
+    if(!user.status){
         console.log(user.name , user.age , user.status)
     }
 }
