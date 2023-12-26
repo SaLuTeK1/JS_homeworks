@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="date-info"></div>
+
+
+
+<script>
+let info = JSON.parse(localStorage.getItem('sessions')) || [];
+let div = document.getElementById('date-info');
+
+info.forEach(session =>
+{
+    let sessionDiv = document.createElement('div');
+    sessionDiv.textContent = `Session : ${session.timestamp}`
+    div.append(sessionDiv);
+})
+</script>
+</body>
+</html>

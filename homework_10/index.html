@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            margin: 5px 0;
+        }
+        #text{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px 0;
+        }
+        .disappear{
+            display: none;
+        }
+        .appear{
+            display: flex;
+        }
+        button{
+            margin: 10px 0;
+        }
+        #three-inputs{
+            margin: 15px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<form name="f1">
+    <label>
+        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="surname" placeholder="Surname">
+        <input type="number" name="age" placeholder="Age">
+        <input type="submit" value="Save data" id="btn1">
+    </label>
+</form>
+<div id="users-block">
+
+</div>
+
+<div id="number-box">
+    Цифра: <span id="number">0</span>
+</div>
+
+
+<div id="hundred-users">
+
+</div>
+<button id="prev-button">Prev</button>
+<button id="next-button">Next</button>
+
+<div id="text"></div>
+<button id="disappear">Hide object</button>
+<button id="appear" class="disappear">Show object</button>
+
+<div>
+    <form name="f2">
+        <label for="age18">Enter your age </label>
+             <input type="number" name="forAge" id="age18">
+             <input type="submit" name="submitAge">
+    </form>
+    <div id="error18"></div>
+</div>
+
+<div id="three-inputs">
+    <label>
+        <input type="number" placeholder="К-сть рядків" name="countRow" id="row">
+        <input type="number" placeholder="К-сть стовбців" name="countCol" id="column">
+        <input type="text" placeholder="Введіть вміст" name="content" id="content">
+        <button name="accept" id="acceptTable">Підтвердити</button>
+    </label>
+    <div id="table-box"></div>
+</div>
+
+
+<div id="money-box">
+    Ваші гроші:<span id="money">100</span> грн.
+</div>
+<script src="main.js"></script>
+</body>
+</html>
